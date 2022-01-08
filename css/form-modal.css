@@ -110,19 +110,10 @@
   margin: 20px;*/
 }
    
-.modal__close-button:hover {
-  transition: .3s;
-}
-   
 .hidden {
   overflow: hidden;
 }
-.modal__close-button:hover {
-  -webkit-transition: .3s;
-  transition: .3s;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  }
+
 /*.contact-form {
   position: relative;
 
@@ -135,3 +126,19 @@
   font-size: 20px;
   margin-bottom: 10px;
 }
+.modalWrapper .butExit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #ccc002;
+}
+
+.modalWrapper .butExit:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  }
