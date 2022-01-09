@@ -51,10 +51,14 @@
 }
 .modalWrapper .modalContent {
   position: relative;
-  background: #fff;
+  background: #23262d;
+  box-shadow: 0 5px 15px black;
   padding: 20px 10px 30px;
   width: 100%;
-  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
   z-index: 40;
 }
   /*.modal__content {
@@ -89,27 +93,6 @@
   margin-left: 20px;
 }*/
    
-.modal__close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  /* background: #ff0000;
-  height: 20px;
-  width: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: none;
-  cursor: pointer;
-  outline: none;
-  margin: 20px;*/
-}
-   
 .hidden {
   overflow: hidden;
 }
@@ -133,7 +116,8 @@
   cursor: pointer;
   border: none;
   background: none;
-  color: #ccc002;
+  color: rgb(206, 224, 2);
+  font-size: 30px;
 }
 
 .modalWrapper .butExit:hover {
@@ -141,4 +125,40 @@
   transition: .3s;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  }
+}
+.contact-form__button {
+  background: rgb(206, 224, 2);
+  border: none;
+  width: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form_title {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(206, 224, 2);
+}
+.contact-form_input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 70px;
+}
+.contact-input {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 200;
+  border: none;
+  text-decoration-color: rgb(255, 254, 254);
+  line-height: 35px;
+  background: #fff;
+}
