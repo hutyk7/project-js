@@ -38,11 +38,10 @@
                   <div class="modalContent">
                     <button class="butExit">
                       &#10006;
-                      <!--<img src="./img/close.svg" width="18" alt="" />-->
                     </button>
                     <div class="contentBlock">
                       <div class="headigModal"></div>
-                      <form class="modalForm" id="my-form" action="https://formspree.io/f/xzbozayy" method="POST">
+                      <form class="modalForm" id="my-form" action="https://formspree.io/f/xzbozayy"  method="POST">
                         <p class="contact-form_title">Contact us</p>
                         <p class="contact-form_description"></p>
                         <div class="contact-form_input-wrapper">
@@ -58,12 +57,36 @@
                             class="contact-input" required placeholder="   Email*" />
                         </div>
                         <div class="contact-form_input-wrapper">
-                          <input name="message" type="text" class="contact-form__input_message"
-                            placeholder="   Your Massage*" />
+                          <textarea name="text"  class="contact-input" placeholder="   Your Massage*" data-req=""></textarea>
                         </div>
-                        <button class="contact-form__button" type="submit">
+                        <button class="contactButton" type="submit" data-modal-id="#sabmitModal_7">
                           Request a quote
                         </button>
+                        <p id="my-form-status"></p>
+                        <div class="modal">
+                          <div class="modal__content">
+                            <button class="exitBut">
+                              &#10006;
+                            </button>
+                            <img class="modal_img" src="./img/checking.png" width="25" alt="" />
+                            <h1 class="modal__title">Thank you!</h1>
+                            <p class="modal__description">We will contact you shortly.</p>
+                            <button class="modal__close-button_ok">Ok</button>
+                          </div>
+                        </div>
+                        <!--
+                        <div id="submitModal_7" class="modalThanks">
+                          <div class="fonBlack"></div>
+                          <div class="modalText">
+                            <div class="exitBut">
+                              &#10006;
+                            </div>
+                            <img class="modal_img" src="./img/check.png" width="25" alt="" />
+                            <h1 class="modal__title">Thank you!</h1>
+                            <p class="modal__description">We will contact you shortly.</p>
+                            <button class="modal__close-button_ok">Ok</button>
+                          </div>
+                        </div>-->
                       </form>
                     </div>
                   </div>
@@ -137,57 +160,10 @@
         </div>
       </div>
     </section>
-    <!--<form
-        class="contact-form"
-        id="my-form"
-        action="https://formspree.io/f/xzbozayy"
-        method="post"
-      >
-        <p class="contact-form_title">Contact us</p>
-        <p class="contact-form_description"></p>
-        <div class="contact-form_input-wrapper">
-          <input
-            name="full_name"
-            type="text"
-            class="contact-form__input contact-form__input__name"
-            required
-            placeholder="Your Name*"
-          />
-        </div>
-        <div class="contact-form_input-wrapper">
-          <input
-            name="phone-namber"
-            type="tel"
-            id="phone_number"
-            class="contact-form__input contact-form__input__tel"
-            required
-            placeholder="Phone number*"
-          />
-        </div>
-        <div class="contact-form_input-wrapper">
-          <input
-            name="mail"
-            type="email"
-            id="mail"
-            class="contact-form__input contact-form__input__email"
-            required
-            placeholder="Email*"
-          />
-        </div>
-        <div class="contact-form_input-wrapper">
-          <input
-            name="message"
-            type="text"
-            class="contact-form__input contact-form__input_mesage"
-            placeholder="Your Massage*"
-          />
-        </div>
-        <button class="contact-form__button" type="submit">
-          Request a quote
-        </button>
-      </form>-->
   </main>
   <script src="js/modal.js"></script>
+  <script src="js/thanks-modal.js"></script>
+  <script src="js/formspre.js"></script>
 </body>
 
 </html>
